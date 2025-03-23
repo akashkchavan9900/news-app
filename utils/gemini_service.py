@@ -12,7 +12,7 @@ class GeminiService:
             api_key: Google API key for Gemini
         """
         if api_key is None:
-            api_key = os.getenv("AIzaSyBABmCH9MEYiVyvcc3iXEV_bNFvL3z5oCk")
+            api_key = os.getenv(GOOGLE_API_KEY)
             
         if not api_key:
             raise ValueError("Google API key is required")
